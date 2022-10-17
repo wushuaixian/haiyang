@@ -167,7 +167,7 @@ const transferDataSource = [];
 function flatten(list = []) {
   list.forEach((item) => {
     transferDataSource.push(item);
-    flatten(item.children);
+    if (item.children) flatten(item.children);
   });
 }
 flatten(JSON.parse(JSON.stringify(tData)));

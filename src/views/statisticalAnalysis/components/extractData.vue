@@ -81,6 +81,8 @@ export default {
             textStyle: {
               color: "#A8C5FF",
             },
+            interval: 0,
+            rotate: 300,
           },
           axisLine: {
             show: false,
