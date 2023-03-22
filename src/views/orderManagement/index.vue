@@ -408,7 +408,9 @@ export default {
       }
       /deep/
         .ant-radio-group-solid
-        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+        .ant-radio-button-wrapper-checked:not(
+          .ant-radio-button-wrapper-disabled
+        ) {
         background: #5b92ff;
         color: #fff;
       }

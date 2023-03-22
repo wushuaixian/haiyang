@@ -560,7 +560,39 @@ export default {
   }
   .historgrams {
     margin-top: 17px;
+    // & > div > div {
+    //   text-align: initial;
+    // }
+    // & > div > div:nth-child(1) {
+    //   float: left;
+    // }
+    // & > div > div:nth-child(3) {
+    //   margin-right: 0px;
+    //   float: right;
+    //   &::before {
+    //     content: "";
+    //     clear: both;
+    //   }
+    // }
   }
+  // @media only screen and (max-width: 1079px) {
+  //   .historgrams {
+  //     & > div > div {
+  //       text-align: initial;
+  //     }
+  //     & > div > div:nth-child(1) {
+  //       float: initial;
+  //     }
+  //     & > div > div:nth-child(3) {
+  //       margin-right: 5px;
+  //       float: initial;
+  //       &::after {
+  //         content: "";
+  //         clear: both;
+  //       }
+  //     }
+  //   }
+  // }
   .middle {
     width: 100%;
     .intranetOrder {

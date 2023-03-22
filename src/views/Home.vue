@@ -13,19 +13,19 @@
         <img src="@/assets/images/u31.png" style="height: 100%" alt="" />
       </div>
       <div class="right-img">
-        <!-- <div class="tv_img_group"> -->
-        <!-- <img class="head" src="@/assets/images/u26.svg" alt="" />
+        <div class="tv_img_group">
+          <img class="head" src="@/assets/images/u26.svg" alt="" />
           <img class="fir" src="@/assets/images/c4_u14.svg" alt="" />
-          <img class="sec" src="@/assets/images/c3_u15.svg" alt="" /> -->
-        <!-- <img class="thir" src="@/assets/images/c2_u16.svg" alt="" /> -->
-        <!-- </div> -->
+          <img class="sec" src="@/assets/images/c3_u15.svg" alt="" />
+          <img class="thir" src="@/assets/images/c2_u16.svg" alt="" />
+        </div>
         <!-- <div class="message_img">
           <img
             src="@/assets/images/u10.svg"
             style="width: 19px; height: 21px"
             alt=""
-          /> -->
-        <!-- </div> -->
+          />
+        </div> -->
         <div class="admin_img">
           <!-- <a-popover v-model:visible="visible" trigger="click">
             <template #content>
@@ -75,7 +75,7 @@
             </template>
             <span>{{ item.label }}</span>
           </a-menu-item>
-          <a-sub-menu :key="item.index" v-else>
+          <a-sub-menu v-else>
             <template #icon
               ><img :title="item.label" :src="item.imgsrc" alt="" />
             </template>
@@ -118,7 +118,7 @@ import {
   LeftOutlined,
   RightOutlined,
 } from "@ant-design/icons-vue";
-import { onMounted, reactive, toRefs, toRaw, watch } from "vue";
+import { onMounted, reactive, toRefs, watch } from "vue";
 import u37 from "@/assets/images/u37.svg";
 import u39 from "@/assets/images/u39.svg";
 import u49 from "@/assets/images/u49.svg";
@@ -141,7 +141,7 @@ export default {
   },
 
   setup(props) {
-    console.log(toRaw(route));
+    // console.log(toRaw(route));
     const store = useStore(); // 获取store 实例
     console.log(props);
     const router = useRouter();
@@ -210,6 +210,11 @@ export default {
               index: "jurisdiction",
             },
           ],
+        },
+        {
+          label: "表格动画",
+          index: "animationTable",
+          imgsrc: u43,
         },
       ],
     });

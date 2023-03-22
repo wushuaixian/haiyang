@@ -7,6 +7,7 @@ import BlockTitleName from "./components/blockTitleName";
 import TitleName from "@/components/titleName.vue";
 import STable from "./components/table/";
 import router from "./router";
+
 createApp(App)
   .use(store)
   .use(Antd)
