@@ -318,6 +318,14 @@ export default {
       showQuery.value = !showQuery.value;
     };
     const columns = [
+      {
+        title: "序号",
+        width: 40,
+        customRender: (text, record, index) => {
+          console.log(text, record, index);
+          return `${text.index + 1}`;
+        },
+      },
       { title: "任务号", dataIndex: "taskNumber", key: "taskNumber" },
       { title: "卫星", dataIndex: "satellite", key: "satellite" },
       { title: "任务类型", dataIndex: "taskType", key: "taskType" },

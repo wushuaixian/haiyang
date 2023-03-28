@@ -21,7 +21,7 @@
       <div class="line"></div>
       <a-form layout="vertical" :model="formState">
         <a-form-item label="用户名">
-          <input v-model="formState.name" />
+          <input v-model="formState.name" autocomplete="off" type="password" />
         </a-form-item>
         <a-form-item label="密码" v-if="type == 'add'">
           <input v-model="formState.name" />

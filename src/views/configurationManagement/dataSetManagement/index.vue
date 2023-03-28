@@ -11,16 +11,22 @@
       <div class="titleSelect">
         <span class="title">卫星：</span>
         <a-select
-          default-value=""
-          style="width: 260px; height: 32px; background: #212d66"
+          v-model:value="satellite"
+          style="
+            width: 200px;
+            height: 32px;
+            background: #212d66;
+            color: #a8c5ff;
+          "
           :dropdownStyle="{ background: '#2d3d88' }"
         >
           <a-select-option
             v-for="item in satelliteList"
             style="color: #a8c5ff"
-            :value="item"
-            :key="item"
+            :key="item.index"
+            :value="item.value"
           >
+            {{ item.value }}
           </a-select-option>
         </a-select>
       </div>
@@ -55,7 +61,29 @@ import { reactive, toRefs } from "vue";
 export default {
   setup() {
     const state = reactive({
-      satelliteList: ["HU1C", "HY1D", "HY2B", "HY2D", "GF3"],
+      satellite: "",
+      satelliteList: [
+        {
+          value: "HY1C",
+          label: "HY1C",
+        },
+        {
+          value: "AQUA",
+          label: "AQUA",
+        },
+        {
+          value: "TERRA",
+          label: "TERRA",
+        },
+        {
+          value: "中法卫星",
+          label: "中法卫星",
+        },
+        {
+          value: "海洋1C",
+          label: "海洋1C",
+        },
+      ],
       columns: [
         { title: "数据集名称", dataIndex: "dataSetName", key: "dataSetName" },
         {

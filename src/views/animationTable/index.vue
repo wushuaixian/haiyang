@@ -54,7 +54,7 @@ export default {
           title: "创建时间",
           dataIndex: "createTime",
           key: "createTime",
-          slot: "xx",
+          //  slot: "xx",
           fixed: "right",
           width: "200px",
         },

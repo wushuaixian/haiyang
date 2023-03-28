@@ -244,7 +244,7 @@ export default {
         for (let h = 0; h < newarr.length; h++) {
           let keyarry = [];
           let obj = keydigui(newarr[h], tData);
-          if (obj.type == "catalogue") {
+          if (obj && obj.type == "catalogue") {
             allkey(obj.children, keyarry);
             if (
               obj.type &&

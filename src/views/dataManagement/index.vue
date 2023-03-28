@@ -8,7 +8,7 @@
             <span>卫星：</span>
             <a-select
               v-model:value="satellite"
-              style="width: 74% height: 32px; background: #212d66;color:#a8c5ff "
+              style="height: 32px; background: #212d66; color: #a8c5ff"
               :dropdownStyle="{ background: '#2d3d88' }"
             >
               <a-select-option
@@ -25,7 +25,7 @@
             ><span>数据集：</span>
             <a-select
               default-value=""
-              style="width: 74% height: 32px; background: #212d66;color:#a8c5ff"
+              style="height: 32px; background: #212d66; color: #a8c5ff"
               :dropdownStyle="{ background: '#2d3d88' }"
             >
               <a-select-option style="color: #a8c5ff" value="HY1C-A">

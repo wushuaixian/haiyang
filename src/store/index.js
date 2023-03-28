@@ -15,7 +15,7 @@ export default createStore({
       "userAdminstratordir",
       "userAdminstrator",
       "jurisdiction",
-      // "animationTable",
+      "animationTable",
     ],
     buttonJurisdiction: [
       "taskManagementRetry",
